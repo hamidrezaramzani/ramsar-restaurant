@@ -1,14 +1,15 @@
 body {
-    padding: 0;
-    margin : 0;
+    padding   : 0;
+    margin    : 0;
     overflow-x: hidden;
-    direction: ltr;
+    direction : ltr;
 }
 
-ul{
-    padding: 0;
+ul {
+    padding   : 0;
     list-style: none;
 }
+
 a {
     text-decoration: none;
 }
@@ -33,3 +34,45 @@ a {
     font-family: ikb;
 }
 
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+.react-tabs__tab-list {
+    display        : flex;
+    justify-content: center;
+    border         : none!important;
+}
+
+.react-tabs__tab {
+    border: none!important;
+    font-family: ik;
+}
+.react-tabs__tab svg{
+    margin-left:5px;
+    font-size:20px;
+}
+
+.react-tabs__tab--selected{
+    border: none!important;
+    background-color: rgb(23, 148, 206)!important;
+    color: #fff!important;
+    }
+
+.star-container{
+    padding: 0!important;
+}
+.star-container svg{
+    width: 20px!important;
+    height: 20px!important;
+}
+
+.star-ratings{
+    float: right;
+}
