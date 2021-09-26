@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 
-function login() {
+function Login() {
     const router = useRouter();
     const [values, setValues] = useState({ username: "", password: "" });
     const onSubmit = (e) => {
@@ -51,4 +51,4 @@ function login() {
     )
 }
 
-export default login
+export default Login
