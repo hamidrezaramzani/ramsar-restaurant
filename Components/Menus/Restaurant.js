@@ -9,7 +9,7 @@ import {BiDrink} from 'react-icons/bi'
 import FoodItem from './FoodItem'
 function Restaurant() {
     return (
-        <Container className="py-5">
+        <Container className="py-5 my-5" id="restaurant-menu">
             <Row>
                 <Col className={menus}>
                 <h2>منوی رستوران</h2>
@@ -24,7 +24,10 @@ function Restaurant() {
                         </TabList>
 
                         <TabPanel>
-                            <Row className="justify-content-center">
+                            <Row className="justify-content-start">
+                                <FoodItem />                                                    
+                                <FoodItem />                                                    
+                                <FoodItem />                                                       
                                 <FoodItem />                                                    
                                 <FoodItem />                                                    
                                 <FoodItem />                                                    

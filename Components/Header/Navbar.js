@@ -1,35 +1,39 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
 import styles from '../../styles/Home.module.css';
+import Link from 'next/link'
 function Navbar() {
     return (
         <Col xs="12" md="12" className="px-5" style={{ zIndex: 2 }}>
             <ul className={styles.navbar}>
 
                 <li>
-                    <a href="/home">غذاهای ایرانی
-                    </a>
+                    <Link href="/">درباره ما</Link>
+                </li>
+
+                <li>
+                    <Link href="/">آدرس
+                    </Link>
                 </li>
 
 
                 <li>
-                    <a href="/home">
-                        فست فود
-                    </a>
+                    <Link href="/home">
+                        منوی رستوران
+                    </Link>
                 </li>
 
 
                 <li>
-                    <a href="/home">پیش غذاها
-                    </a>
+                    <Link href="/home">منوی کافی شاپ
+                    </Link>
                 </li>
 
+
                 <li>
-                    <a href="/home">درباره ما</a>
+                    <Link href="/home">صفحه اصلی</Link>
                 </li>
-                <li>
-                    <a href="/home">صفحه اصلی</a>
-                </li>
+
 
 
             </ul>

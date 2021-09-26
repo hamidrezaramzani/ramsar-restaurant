@@ -1,0 +1,23 @@
+/* .contact_us{
+
+} */
+.contact_us  h2{ 
+    font:26px ikb;
+    color: #252525;
+    text-align: center;
+}
+
+.contact_us  p {
+    display: block;
+    text-align: center;
+    font:14px ik;
+    color:#454545;
+}
+
+
+.contact_us_data{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

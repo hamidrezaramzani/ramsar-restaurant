@@ -12,10 +12,26 @@
     text-align: center;
     font:14px ik;
     color:#454545;
+    margin-bottom: 50px;
 }
 
+
+@keyframes tabs {
+    0%{
+        scale: 0;
+        transform: rotate(45deg);
+    }
+
+    100%{
+        scale: 1;
+        transform: rotate(0);
+
+    }
+}
 .food_item{
     text-align: center;
+    animation: tabs 0.3s ease ;
+
 }
 .food_item_content{
     padding: 5px;

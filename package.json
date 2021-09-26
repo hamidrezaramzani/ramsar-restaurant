@@ -1,7 +1,7 @@
 {
   "name": "ramsar-restaurant",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,12 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^5.1.0",
+    "leaflet": "^1.7.1",
+    "mongodb": "^4.1.2",
+    "mongoose": "^6.0.6",
     "next": "11.1.2",
+    "next-iron-session": "^4.2.0",
     "react": "17.0.2",
     "react-bootstrap": "^2.0.0-beta.6",
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
+    "react-leaflet": "^3.2.1",
+    "react-photo-gallery": "^8.0.0",
     "react-star-ratings": "^2.3.0",
     "react-tabs": "^3.2.2"
   },

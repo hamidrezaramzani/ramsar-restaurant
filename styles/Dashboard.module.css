@@ -1,0 +1,25 @@
+.sidebar{
+    border-radius: 10px;
+}
+.sidebar ul li  {
+    padding: 13px 10px;
+	background: #4B79A1; 
+}
+.sidebar ul li  a{
+    display: block;
+    text-align: right;
+    color:#fff;
+    font:14px ik;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 8px;
+}
+
+.head_item {
+    background : #2d5d87!important;   
+	
+}
+
+.head_item a {
+	font:13px ik!important;
+}
+
