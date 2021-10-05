@@ -12,26 +12,26 @@ function Navbar() {
                 </li>
 
                 <li>
-                    <Link href="/">آدرس
+                    <Link href="/#address">آدرس
                     </Link>
                 </li>
 
 
                 <li>
-                    <Link href="/home">
+                    <Link href="/#restaurant-menu">
                         منوی رستوران
                     </Link>
                 </li>
 
 
                 <li>
-                    <Link href="/home">منوی کافی شاپ
+                    <Link href="/#coffe-shop-menu">منوی کافی شاپ
                     </Link>
                 </li>
 
 
                 <li>
-                    <Link href="/home">صفحه اصلی</Link>
+                    <Link href="/">صفحه اصلی</Link>
                 </li>
 
 

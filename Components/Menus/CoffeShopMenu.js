@@ -33,7 +33,7 @@ function CoffeShopMenu() {
         ))
     }
     return (
-        <Container className="py-5" id="restaurant-menu">
+        <Container className="py-5" id="coffe-shop-menu">
             <Row>
                 <Col className={menus}>
                     <h2>منوی کافی شاپ</h2>
