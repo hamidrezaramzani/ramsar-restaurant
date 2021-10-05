@@ -2,40 +2,75 @@ import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import {menus , food_item, food_item_price , food_item_content , food_item_data} from '../../styles/Menus.module.css';
-import {FaFish , FaPizzaSlice} from 'react-icons/fa'
-import {GiKebabSpit , GiOlive} from 'react-icons/gi'
-import {BiDrink} from 'react-icons/bi'
+import { menus } from '../../styles/Menus.module.css';
+import { FaFish, FaPizzaSlice } from 'react-icons/fa'
+import { GiKebabSpit, GiOlive } from 'react-icons/gi'
+import { BiDrink } from 'react-icons/bi'
 import FoodItem from './FoodItem'
+import EmptyList from './EmptyList';
 function Restaurant() {
+    const data = [
+        {
+            title: "جوجه ترش",
+            description: "300 گرم",
+            price: 150000,
+            image: "https://kalleh.com/book/wp-content/uploads/sites/2/2019/02/jojeh-kabab-cover.jpg",
+            rate: 3
+        },
+        {
+            title: "کباب ترش",
+            description: "300 گرم گوشت گوساله",
+            price: 125000,
+            rate: 5,
+            image: "https://media-cdn.tripadvisor.com/media/photo-s/0f/b5/01/df/sour-kebab.jpg"
+        }
+    ]
+
+    function renderProducts() {
+        return data.map((item, index) => (
+            <FoodItem key={index} {...item} />
+        ))
+    }
     return (
         <Container className="py-5 my-5" id="restaurant-menu">
             <Row>
                 <Col className={menus}>
-                <h2>منوی رستوران</h2>
-                <p>منوی به روز رستوران</p>
+                    <h2>منوی رستوران</h2>
+                    <p>منوی به روز رستوران</p>
                     <Tabs>
                         <TabList>
-                             <Tab><GiKebabSpit />غذاهای ایرانی</Tab>
+                            <Tab><GiKebabSpit />غذاهای ایرانی</Tab>
                             <Tab><FaPizzaSlice />فست فود</Tab>
                             <Tab><FaFish />غذاهای دریایی</Tab>
                             <Tab><GiOlive />پیش غذاها</Tab>
-                            <Tab><BiDrink />نوشیدنی ها</Tab>    
+                            <Tab><BiDrink />نوشیدنی ها</Tab>
                         </TabList>
-
                         <TabPanel>
                             <Row className="justify-content-start">
-                                <FoodItem />                                                    
-                                <FoodItem />                                                    
-                                <FoodItem />                                                       
-                                <FoodItem />                                                    
-                                <FoodItem />                                                    
-                                <FoodItem />                                                    
-                                <FoodItem />                                                    
+                                {renderProducts()}
                             </Row>
                         </TabPanel>
                         <TabPanel>
-                            <h2>Any content 2</h2>
+                            <Row className="justify-content-start">
+                                <EmptyList image="/images/logo-restaurant.png" />
+                            </Row>
+                        </TabPanel>
+
+                        <TabPanel>
+                            <Row className="justify-content-start">
+                                <EmptyList image="/images/logo-restaurant.png" />
+                            </Row>
+                        </TabPanel>
+
+                        <TabPanel>
+                            <Row className="justify-content-start">
+                                <EmptyList image="/images/logo-restaurant.png" />
+                            </Row>
+                        </TabPanel>
+                        <TabPanel>
+                            <Row className="justify-content-start">
+                                <EmptyList image="/images/logo-restaurant.png" />
+                            </Row>
                         </TabPanel>
                     </Tabs>
                 </Col>

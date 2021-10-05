@@ -104,3 +104,25 @@ a {
   .form-signin .form-control:focus {
     z-index: 2;
   }
+
+
+  .empty-list{
+      width: 100%;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    flex-direction: column;
+    }
+
+  .empty-list img{
+      filter: grayscale(100%);
+    opacity: .5;
+      width: 150px;
+  }
+
+  .empty-list h3{
+      font:15px ikb;
+      color: #ccc;
+        margin-top: 10px;
+  }
