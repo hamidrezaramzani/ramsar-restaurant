@@ -10,7 +10,7 @@ function Header() {
         <Row className={["justify-content-center", styles.header]} >
             <Navbar />
             <Welcome />
-            <Link href="/home" >
+            <Link style={{zIndex : 3}} href="/#restaurant-menu" >
                 <a className={styles.arrow}><FaArrowDown /></a>
             </Link>
         </Row>
