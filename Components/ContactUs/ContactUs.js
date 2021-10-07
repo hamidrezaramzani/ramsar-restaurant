@@ -12,15 +12,10 @@ const ContactUs = () => {
             <Col xs="12" md="6" className={contact_us_data}>
                 <h2>رستوران و کافی شاپ رامسر</h2>
                 <p>آدرس : رامسر - ساداتشهر - اربکله - رستوران و کافی شاپ رامسر</p>
+                <p>
+                    <FaInstagram className="mx-1" />ramsarrestaurant | <FaPhone className="mx-1" /> 09300152714
+                </p>
 
-                <a href="" className="btn btn-sm ik btn-outline-dark d-flex align-items-center">
-                    <FaInstagram className="mx-1" />ramsarrestaurant
-                </a>
-
-                <br />
-                <a href="" className="mt-2 btn btn-sm ik btn-outline-dark d-flex align-items-center">
-                    <FaPhone className="mx-1" /> 09300152714
-                </a>
             </Col>
         </Row>
     </Container>

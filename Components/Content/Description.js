@@ -14,11 +14,11 @@ function Description(props) {
         <Container >
             <Row className="py-5 mt-5">
 
-                <Col xs="12" data-aos="flip-right" md="6" className={[image , props.rtl ? "order-2" : "order-1"]}>
+                <Col xs="12" data-aos="flip-right" md="6" className={[image , props.rtl ? "order-1" : "order-1"]}>
                     <img   src={props.image} width="500" height="500" />
                 </Col>
                 
-                <Col xs="12" data-aos="fade-top"  md="6" className={[content_data,  props.rtl ? "order-1" : "order-2"]}>
+                <Col xs="12" data-aos="fade-top"  md="6" className={[content_data,  props.rtl ? "order-1" : "order-1"]}>
                     <h2>
                         {props.title}
                     </h2>

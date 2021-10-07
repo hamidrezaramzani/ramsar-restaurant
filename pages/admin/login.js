@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useRouter } from 'next/router'
+import withSession from '../../lib/session'
 
 function Login() {
     const router = useRouter();
@@ -51,4 +52,20 @@ function Login() {
     )
 }
 
+
+export const getServerSideProps = withSession(async function ({ req, res }) {
+    const user = req.session.get('user')
+    if (user) {
+        return {
+            redirect: {
+                destination: '/admin/dashboard',
+                permanent: false,
+            },
+        }
+    }
+
+    return {
+        props: { user: req.session.get('user') },
+    }
+})
 export default Login

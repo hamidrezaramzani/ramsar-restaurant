@@ -12,4 +12,20 @@ function dashboard(props) {
 
 
 
+export const getServerSideProps = withSession(async function ({ req, res }) {
+    const user = req.session.get('user')
+    if (!user) {
+        return {
+            redirect: {
+                destination: '/admin/login',
+                permanent: false,
+            },
+        }
+    }
+
+    return {
+        props: { user: req.session.get('user') },
+    }
+})
+
 export default dashboard
