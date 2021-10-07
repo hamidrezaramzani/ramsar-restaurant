@@ -1,8 +1,8 @@
-body {
-    padding   : 0;
-    margin    : 0;
-    overflow-x: hidden;
-    direction : ltr;
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    direction: ltr;
 }
 
 ul {
@@ -44,85 +44,91 @@ a {
         transform: rotate(360deg);
     }
 }
+
 .react-tabs__tab-list {
     display        : flex;
     justify-content: center;
-    border         : none!important;
+    border         : none !important;
 }
 
 .react-tabs__tab {
-    border: none!important;
+    border     : none !important;
     font-family: ik;
 }
-.react-tabs__tab svg{
-    margin-left:5px;
-    font-size:20px;
+
+.react-tabs__tab svg {
+    margin-left: 5px;
+    font-size  : 20px;
 }
 
-.react-tabs__tab--selected{
-    border: none!important;
-    background-color: rgb(23, 148, 206)!important;
-    color: #fff!important;
-    }
-
-.star-container{
-    padding: 0!important;
-}
-.star-container svg{
-    width: 20px!important;
-    height: 20px!important;
+.react-tabs__tab--selected {
+    border          : none !important;
+    background-color: rgb(23, 148, 206) !important;
+    color           : #fff !important;
 }
 
-.star-ratings{
+.star-container {
+    padding: 0 !important;
+}
+
+.star-container svg {
+    width : 20px !important;
+    height: 20px !important;
+}
+
+.star-ratings {
     float: right;
 }
 
-.gallery img{
+.gallery img {
     object-fit: cover;
 
 }
 
 
 .form-signin {
-    width: 100%;
-    max-width: 500px;
-    padding: 15px;
-    margin: auto;
+    width      : 100%;
+    max-width  : 500px;
+    padding    : 15px;
+    margin     : auto;
     font-family: ik;
-  }
+}
 
-  .form-signin .checkbox {
+.form-signin .checkbox {
     font-weight: 400;
-  }
-  .form-signin .form-control {
-    position: relative;
+}
+
+.form-signin .form-control {
+    position  : relative;
     box-sizing: border-box;
-    height: auto;
-    padding: 10px;
-    font-size: 16px;
-  }
-  .form-signin .form-control:focus {
+    height    : auto;
+    padding   : 10px;
+    font-size : 16px;
+}
+
+.form-signin .form-control:focus {
     z-index: 2;
-  }
+}
 
 
-  .empty-list{
-      width: 100%;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    flex-direction: column;
-    }
+.empty-list {
+    width          : 100%;
+    height         : 300px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    flex-direction : column;
+}
 
-  .empty-list img{
-      filter: grayscale(100%);
+.empty-list img {
+    filter : grayscale(100%);
     opacity: .5;
-      width: 150px;
-  }
+    width  : 150px;
+}
 
-  .empty-list h3{
-      font:15px ikb;
-      color: #ccc;
-        margin-top: 10px;
-  }
+.empty-list h3 {
+    font      : 15px ikb;
+    color     : #ccc;
+    margin-top: 10px;
+}
+

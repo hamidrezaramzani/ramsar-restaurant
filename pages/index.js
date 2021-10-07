@@ -12,18 +12,19 @@ import OpeningHours from '../Components/OpeningHours/OpeningHours'
 import Logos from '../Components/Logos/Logos'
 export default function Home() {
     const coffeeData = {
-        title : "کافی شاپ" , 
-        description : "از برترین کافی شاپ های منطقه با انواع نوشیدنی های گرم و سرد که با بهترین کیفیت و بهترین دستگاه ها ساخته میشود و تقدیم مشتری میگردد" , 
-        image : "/images/food4.jpg" , 
-        buttonText : "منوی کافه" , 
-        buttonLink : "/#coffee-menu" , 
-        rtl : true
+        title: "کافی شاپ",
+        description: "از برترین کافی شاپ های منطقه با انواع نوشیدنی های گرم و سرد که با بهترین کیفیت و بهترین دستگاه ها ساخته میشود و تقدیم مشتری میگردد",
+        image: "/images/food4.jpg",
+        buttonText: "منوی کافه",
+        buttonLink: "/#coffee-menu",
+        rtl: true
     }
     return (
         <>
             <Head>
                 <title>وبسایت رستوران و کافی شاپ رامسر</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
             <Header />
             <Content />

@@ -6,7 +6,7 @@ import styles from '../../styles/Home.module.css';
 import Link from 'next/link'
 import {FaArrowDown} from 'react-icons/fa'
 function Header() {
-    return (
+    return (    
         <Row className={["justify-content-center", styles.header]} >
             <Navbar />
             <Welcome />

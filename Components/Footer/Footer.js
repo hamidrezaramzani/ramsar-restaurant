@@ -6,10 +6,12 @@ const Footer = () => {
 			<Col xs="12" md="12">		
 				<Container>					
 					<Row>						
-						<Col xs="12" md="3" className={[footer_logo , "py-5 px-5"]}>
+						<Col xs="12" md="4" className={[footer_logo , "py-5 px-5"]}>
+                            <img src="/images/logo-restaurant.png" width="100" alt="logo in footer" />
+                            <img src="/images/logo-coffe.png" width="100" alt="logo in footer" />
                             <h2 className="text-center text-light">رستوران و کافی شاپ رامسر</h2>
                         </Col>
-						<Col xs="12" md="5" className={[footer_social_medias , "py-5 px-5"]}>
+						<Col xs="12" md="4" className={[footer_social_medias , "py-5 px-5"]}>
 
                             <h6>مارا در شبکه های اجتماعی دنبال کنید</h6>
                             <div>
