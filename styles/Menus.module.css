@@ -29,6 +29,7 @@
     }
 }
 .food_item{
+    width: 100%;
     text-align: center;
     animation: tabs 0.3s ease ;
 
@@ -40,7 +41,7 @@
 
 .food_item_content img{
     width: 100%;
-    height: 180px;
+    height: 220px;
     object-fit: cover;
     transition: all .5s ease;
 
@@ -85,3 +86,4 @@
     border-radius: 10px;
     background: rgb(23, 148, 206);
 }
+

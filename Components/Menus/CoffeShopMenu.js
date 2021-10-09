@@ -8,6 +8,7 @@ import { AiOutlineCoffee } from 'react-icons/ai'
 import { BiDrink } from 'react-icons/bi'
 import FoodItem from './FoodItem'
 import EmptyList from './EmptyList';
+import Slider from 'react-slick'
 function CoffeShopMenu() {
     const data = [
         {
@@ -23,8 +24,33 @@ function CoffeShopMenu() {
             price: 40000,
             image: "https://www.parsine.com/files/fa/news/1400/2/30/1361350_532.jpg",
             rate: 3
+        },
+        {
+            title: "شیک نوتلا",
+            description: "نوتلا - بستنی -  شیر",
+            price: 40000,
+            image: "https://www.parsine.com/files/fa/news/1400/2/30/1361350_532.jpg",
+            rate: 3
+        }
+        ,
+        {
+            title: "شیک نوتلا",
+            description: "نوتلا - بستنی -  شیر",
+            price: 40000,
+            image: "https://www.parsine.com/files/fa/news/1400/2/30/1361350_532.jpg",
+            rate: 3
         }
     ]
+
+    const settings = {
+        className: "centerSlider",
+        centerMode: true,
+        infinite: true,
+        centerPadding: "60px",
+        slidesToShow: 3,
+        speed: 500 , 
+        swipeToSlide : true
+    };
 
 
     function renderProducts() {
@@ -47,7 +73,9 @@ function CoffeShopMenu() {
 
                         <TabPanel>
                             <Row className="justify-content-start">
-                                {renderProducts()}
+                                <Slider {...settings}>
+                                    {renderProducts()}
+                                </Slider>
                             </Row>
                         </TabPanel>
 
