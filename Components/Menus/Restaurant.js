@@ -1,14 +1,16 @@
-import React from 'react'
+import React , {useState , useEffect} from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { menus } from '../../styles/Menus.module.css';
-import { FaFish, FaPizzaSlice } from 'react-icons/fa'
-import { GiKebabSpit, GiOlive } from 'react-icons/gi'
-import { BiDrink } from 'react-icons/bi'
 import FoodItem from './FoodItem'
 import EmptyList from './EmptyList';
+import Slider from 'react-slick'
+import {isMobile} from 'react-device-detect'
+
 function Restaurant() {
+
+    const [value , setValue ] = useState(3);
     const data = [
         {
             title: "جوجه ترش",
@@ -23,8 +25,64 @@ function Restaurant() {
             price: 125000,
             rate: 5,
             image: "https://media-cdn.tripadvisor.com/media/photo-s/0f/b5/01/df/sour-kebab.jpg"
+        } , 
+        {
+            title: "جوجه ترش",
+            description: "300 گرم",
+            price: 150000,
+            image: "https://kalleh.com/book/wp-content/uploads/sites/2/2019/02/jojeh-kabab-cover.jpg",
+            rate: 3
+        },
+        {
+            title: "کباب ترش",
+            description: "300 گرم گوشت گوساله",
+            price: 125000,
+            rate: 5,
+            image: "https://media-cdn.tripadvisor.com/media/photo-s/0f/b5/01/df/sour-kebab.jpg"
+        } , 
+        {
+            title: "کباب ترش",
+            description: "300 گرم گوشت گوساله",
+            price: 125000,
+            rate: 5,
+            image: "https://media-cdn.tripadvisor.com/media/photo-s/0f/b5/01/df/sour-kebab.jpg"
+        }, 
+        {
+            title: "جوجه ترش",
+            description: "300 گرم",
+            price: 150000,
+            image: "https://kalleh.com/book/wp-content/uploads/sites/2/2019/02/jojeh-kabab-cover.jpg",
+            rate: 3
+        },
+        {
+            title: "کباب ترش",
+            description: "300 گرم گوشت گوساله",
+            price: 125000,
+            rate: 5,
+            image: "https://media-cdn.tripadvisor.com/media/photo-s/0f/b5/01/df/sour-kebab.jpg"
+        } , 
+        {
+            title: "کباب ترش",
+            description: "300 گرم گوشت گوساله",
+            price: 125000,
+            rate: 5,
+            image: "https://media-cdn.tripadvisor.com/media/photo-s/0f/b5/01/df/sour-kebab.jpg"
         }
     ]
+
+    useEffect(() => {
+        if(isMobile){
+            setValue(1);
+        }
+    },[]);
+    const settings = {
+        className: "centerSlider",
+        centerMode: true,
+        infinite: true,
+        centerPadding: "60px",
+        slidesToShow: value,
+        speed: 500
+    };
 
     function renderProducts() {
         return data.map((item, index) => (
@@ -39,15 +97,17 @@ function Restaurant() {
                     <p>منوی به روز رستوران</p>
                     <Tabs>
                         <TabList>
-                            <Tab><GiKebabSpit />غذاهای ایرانی</Tab>
-                            <Tab><FaPizzaSlice />فست فود</Tab>
-                            <Tab><FaFish />غذاهای دریایی</Tab>
-                            <Tab><GiOlive />پیش غذاها</Tab>
-                            <Tab><BiDrink />نوشیدنی ها</Tab>
+                            <Tab>غذاهای ایرانی</Tab>
+                            <Tab>فست فود</Tab>
+                            <Tab>غذاهای دریایی</Tab>
+                            <Tab>پیش غذاها</Tab>
+                            <Tab>نوشیدنی ها</Tab>
                         </TabList>
                         <TabPanel>
                             <Row className="justify-content-start">
-                                {renderProducts()}
+                                <Slider {...settings}>
+                                    {renderProducts()}
+                                </Slider>
                             </Row>
                         </TabPanel>
                         <TabPanel>

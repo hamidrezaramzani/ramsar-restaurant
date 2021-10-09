@@ -1,8 +1,9 @@
-html,body {
-    margin:0;
-    padding:0;
-    overflow-x:hidden;
-    direction: ltr;
+html,
+body {
+    margin    : 0;
+    padding   : 0;
+    overflow-x: hidden;
+    direction : ltr;
 }
 
 ul {
@@ -53,13 +54,9 @@ a {
 
 .react-tabs__tab {
     border     : none !important;
-    font-family: ik;
+    font:14px ik;
 }
 
-.react-tabs__tab svg {
-    margin-left: 5px;
-    font-size  : 20px;
-}
 
 .react-tabs__tab--selected {
     border          : none !important;
@@ -132,3 +129,20 @@ a {
     margin-top: 10px;
 }
 
+.slick-slide {
+    opacity  : 0.4;
+    transform: scale(.8);
+}
+
+
+.slick-center {
+    opacity  : 1;
+    transform: scale(1);
+
+
+}
+
+.slick-arrow::before {
+    color: black;
+    font-size: 32px;
+}

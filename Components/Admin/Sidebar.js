@@ -14,7 +14,7 @@ function Sidebar() {
 					
 					<ul>
 						<li>
-							<Link  href="/coffe/add-categories">
+							<Link  href="/coffe/add-category">
 								<a>اضافه کردن دسته بندی</a>
 							</Link>						
 						</li>
