@@ -335,6 +335,7 @@
 }
 
 .opening_hours p {
+    direction: rtl;
     font-size : 14px;
     color     : #686868;
     display   : block;

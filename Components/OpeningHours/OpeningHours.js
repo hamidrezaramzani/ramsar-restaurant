@@ -6,7 +6,9 @@ function OpeningHours() {
         <Row className="justify-content-center p-5">
             <Col xs="12" md="7" className={opening_hours}>
                 <h2>ساعات کاری</h2>
-                <p>باز شدن از ساعت 8 صبح و تا ساعت 12 سفارش گرفته میشود.</p>
+                <p>
+                   8 صبح - 12:30 بامداد
+                </p>
             </Col>
         </Row>
     )

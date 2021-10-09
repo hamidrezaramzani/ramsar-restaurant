@@ -16,7 +16,7 @@ export default function Home() {
         description: "از برترین کافی شاپ های منطقه با انواع نوشیدنی های گرم و سرد که با بهترین کیفیت و بهترین دستگاه ها ساخته میشود و تقدیم مشتری میگردد",
         image: "/images/food4.jpg",
         buttonText: "منوی کافه",
-        buttonLink: "/#coffee-menu",
+        buttonLink: "/#coffe-shop-menu",
         rtl: true
     }
     return (
