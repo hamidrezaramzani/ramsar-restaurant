@@ -66,9 +66,9 @@ function CoffeShopMenu() {
                     <p>منوی به روز کافی شاپ را از اینجا مشاهده کنید</p>
                     <Tabs>
                         <TabList>
-                            <Tab><FaIceCream />شیک و بستنی</Tab>
-                            <Tab><FaCocktail />موکتل</Tab>
-                            <Tab><AiOutlineCoffee />قهوه</Tab>
+                            <Tab>شیک و بستنی</Tab>
+                            <Tab>موکتل</Tab>
+                            <Tab>قهوه</Tab>
                         </TabList>
 
                         <TabPanel>

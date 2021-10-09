@@ -24,3 +24,9 @@
 .contact_us_data h2{
     margin-top: 30px;
 }
+
+@media only screen and (max-width: 600px) {
+   .contact_us_data h2{
+       margin-top: 50px;
+   } 
+}

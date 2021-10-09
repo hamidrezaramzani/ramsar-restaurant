@@ -13,7 +13,7 @@ function Welcome() {
         <div className={styles.welcome}>
             <span>خوش آمدید</span>
             <h1>رستوران و کافی شاپ رامسر</h1>
-            <ButtonGroup >
+            <ButtonGroup>
                 <Button variant="light" onClick={() => goTo("/#restaurant-menu")}>
                     منوی رستوران
                     <BiRestaurant />
