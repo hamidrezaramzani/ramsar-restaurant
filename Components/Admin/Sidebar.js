@@ -18,6 +18,12 @@ function Sidebar() {
 								<a>اضافه کردن دسته بندی</a>
 							</Link>						
 						</li>
+
+                        <li>
+							<Link  href="/coffe/add-product">
+								<a>اضافه کردن محصول</a>
+							</Link>						
+						</li>
 						<li>
 							<Link  href="/coffe/manage-categories">
 								<a>مدیریت دسته بندی ها</a>
