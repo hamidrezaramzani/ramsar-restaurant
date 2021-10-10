@@ -1,15 +1,13 @@
-import React from 'react'
+import React , {useState , useEffect} from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { menus } from '../../styles/Menus.module.css';
-import { FaIceCream, FaCocktail } from 'react-icons/fa'
-import { AiOutlineCoffee } from 'react-icons/ai'
-import { BiDrink } from 'react-icons/bi'
 import FoodItem from './FoodItem'
 import EmptyList from './EmptyList';
 import Slider from 'react-slick'
 function CoffeShopMenu() {
+    const [value , setValue] = useState(3);
     const data = [
         {
             title: "شیک کره بادام زمینی",
@@ -41,13 +39,17 @@ function CoffeShopMenu() {
             rate: 3
         }
     ]
-
+    useEffect(() => {
+        if(isMobile){
+            setValue(1);
+        }
+    },[]);
     const settings = {
         className: "centerSlider",
         centerMode: true,
         infinite: true,
         centerPadding: "60px",
-        slidesToShow: 3,
+        slidesToShow: value,    
         speed: 500 , 
         swipeToSlide : true
     };
