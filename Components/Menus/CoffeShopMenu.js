@@ -6,6 +6,7 @@ import { menus } from '../../styles/Menus.module.css';
 import FoodItem from './FoodItem'
 import EmptyList from './EmptyList';
 import Slider from 'react-slick'
+import {isMobile} from 'react-device-detect'
 function CoffeShopMenu() {
     const [value , setValue] = useState(3);
     const data = [
